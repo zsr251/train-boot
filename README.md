@@ -6,10 +6,16 @@
 
 ## 关联项目
 
-- 后端：[train-boot](https://github.com/zsr251/train-boot)
-- 前端：[train-admin](https://github.com/zsr251/train-admin)
+- 后端
+    - github：[train-boot](https://github.com/zsr251/train-boot)
+    - gitee：[train-boot](https://gitee.com/zsr/train-boot)
+- 前端
+    - github：[train-admin](https://github.com/zsr251/train-admin)
+    - gitee：[train-admin](https://gitee.com/zsr/train-admin)
 - 学员移动端：暂不开源
 - 教师移动端：暂不开源
 
 ## 运行
+- 创建mysql数据库，SQL脚本路径：db/train_boot.sql
+- 创建redis
 - 运行train-boot项目，访问 http://localhost:8080/api/doc.html
