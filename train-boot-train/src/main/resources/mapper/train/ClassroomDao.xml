@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.train.train.dao.ClassroomDao">
+
+    <resultMap type="com.train.train.entity.ClassroomEntity" id="classroomMap">
+        <result property="id" column="id"/>
+        <result property="classroomCode" column="classroom_code"/>
+        <result property="classroomName" column="classroom_name"/>
+        <result property="capacity" column="capacity"/>
+        <result property="address" column="address"/>
+        <result property="classroomStatus" column="classroom_status"/>
+        <result property="remark" column="remark"/>
+        <result property="version" column="version"/>
+        <result property="deleted" column="deleted"/>
+        <result property="creator" column="creator"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updater" column="updater"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="tenantId" column="tenant_id"/>
+    </resultMap>
+
+</mapper>

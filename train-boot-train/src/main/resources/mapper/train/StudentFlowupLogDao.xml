@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.train.train.dao.StudentFlowupLogDao">
+
+    <resultMap type="com.train.train.entity.StudentFlowupLogEntity" id="studentFlowupLogMap">
+        <result property="id" column="id"/>
+        <result property="studentId" column="student_id"/>
+        <result property="flowupPerson" column="flowup_person"/>
+        <result property="flowupType" column="flowup_type"/>
+        <result property="flowupDesc" column="flowup_desc"/>
+        <result property="nextDate" column="next_date"/>
+        <result property="fileIds" column="file_ids"/>
+        <result property="version" column="version"/>
+        <result property="deleted" column="deleted"/>
+        <result property="creator" column="creator"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updater" column="updater"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="tenantId" column="tenant_id"/>
+    </resultMap>
+
+</mapper>

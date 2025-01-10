@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.train.train.dao.CourseHourDepleteLogDao">
+
+    <resultMap type="com.train.train.entity.CourseHourDepleteLogEntity" id="courseHourDepleteLogMap">
+        <result property="id" column="id"/>
+        <result property="studentId" column="student_id"/>
+        <result property="lessonId" column="lesson_id"/>
+        <result property="classCourseId" column="class_course_id"/>
+        <result property="classCode" column="class_code"/>
+        <result property="courseCode" column="course_code"/>
+        <result property="classroomCode" column="classroom_code"/>
+        <result property="teacher" column="teacher"/>
+        <result property="lessonDate" column="lesson_date"/>
+        <result property="lessonBeginTime" column="lesson_begin_time"/>
+        <result property="lessonEndTime" column="lesson_end_time"/>
+        <result property="arrivalStatus" column="arrival_status"/>
+        <result property="courseHour" column="course_hour"/>
+        <result property="depleteTime" column="deplete_time"/>
+        <result property="courseHourBefore" column="course_hour_before"/>
+        <result property="courseHourAfter" column="course_hour_after"/>
+        <result property="remark" column="remark"/>
+        <result property="version" column="version"/>
+        <result property="deleted" column="deleted"/>
+        <result property="creator" column="creator"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updater" column="updater"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="tenantId" column="tenant_id"/>
+    </resultMap>
+
+</mapper>

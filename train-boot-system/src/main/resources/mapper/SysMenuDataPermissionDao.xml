@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.train.system.dao.SysMenuDataPermissionDao">
+
+
+    <select id="getListByUserId" resultType="com.train.system.entity.SysMenuDataPermissionEntity">
+        select * from sys_menu_data_permission
+        where deleted = 0
+        <if test="componentList != null and componentList.size() > 0">
+            and component in
+            <foreach collection="componentList" item="item" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </if>
+        and id in (
+            select data_permission_id from sys_role_data_permission
+            where role_id in (
+                select role_id from sys_user_role
+                where user_id = #{userId}
+                and deleted = 0
+            )
+            and deleted = 0
+        )
+    </select>
+    <select id="getListByRoleId" resultType="com.train.system.entity.SysMenuDataPermissionEntity">
+        select * from sys_menu_data_permission
+        where deleted = 0
+        and component = #{component}
+        and id in (
+            select data_permission_id from sys_role_data_permission
+            where role_id = #{roleId}
+            and deleted = 0
+        )
+    </select>
+    <select id="getListByComponent" resultType="com.train.system.entity.SysMenuDataPermissionEntity">
+        select * from sys_menu_data_permission
+        where deleted = 0
+        and component = #{component}
+    </select>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.train.train.dao.CourseHourBuyLogDao">
+
+    <resultMap type="com.train.train.entity.CourseHourBuyLogEntity" id="courseHourBuyLogMap">
+        <result property="id" column="id"/>
+        <result property="studentId" column="student_id"/>
+        <result property="courseCode" column="course_code"/>
+        <result property="amountOneHour" column="amount_one_hour"/>
+        <result property="courseHourBuy" column="course_hour_buy"/>
+        <result property="orderAmount" column="order_amount"/>
+        <result property="courseHourBefore" column="course_hour_before"/>
+        <result property="courseHourAfter" column="course_hour_after"/>
+        <result property="remark" column="remark"/>
+        <result property="version" column="version"/>
+        <result property="deleted" column="deleted"/>
+        <result property="creator" column="creator"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updater" column="updater"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="tenantId" column="tenant_id"/>
+    </resultMap>
+
+</mapper>
