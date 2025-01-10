@@ -14,6 +14,8 @@
     - gitee：[train-admin](https://gitee.com/zsr/train-admin)
 - 学员移动端：暂不开源
 - 教师移动端：暂不开源
+- 代码生成器：暂不开源
+- 需要移动端代码或者需要一对一讲解、定制开发等，请联系我。 微信：zsr251-1
 
 ## 运行
 - 创建mysql数据库，SQL脚本路径：db/train_boot.sql
