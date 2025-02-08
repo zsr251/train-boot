@@ -169,7 +169,7 @@ public class LessonTimetableServiceImpl extends BaseServiceImpl<LessonTimetableD
         if (course == null) {
             throw new ServerException("课程不存在");
         }
-        TeacherEntity teacher = teacherDao.getByTeacherCode(course.getTeacherCode());
+        TeacherEntity teacher = teacherDao.getByTeacherCode(classCourse.getTeacherCode());
         if (teacher == null) {
             throw new ServerException("老师不存在");
         }
